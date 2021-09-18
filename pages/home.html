@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuca Apartamentos e Coliving SP | Apartamentos individuais ou compartilhados</title>
+<link href="../content/css/styles.min.css" rel="stylesheet">
+<script src="../content/js/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container flex space-between header-height">
+            <figure>
+                <a href="home.html" class="active"><img src="../content/images/yuca.svg" width="40" height="40" alt="YUCA" title="YUCA" /></a>
+            </figure>
+            <section id="user-info">
+                <div id="short-name" data-short-name></div>
+                <div id="first-name" data-first-name></div>
+            </section>
+        </div>
+    </header>
+    <section id="content">
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">MEU YUCA</a></li>
+                <li><a href="#">MINHA CONTA</a></li>
+            </ul>
+        </nav>
+        <div id="content-container">
+            <section id="home">
+                <hr class="hr green-line" />
+                <h1>
+                    Bem vindo, <span data-first-name></span>
+                </h1>
+                <h2>
+                    Atualmente você está morando em:
+                </h2>
+                <section id="current-home">
+                    <div class="box-apartments">
+                            <figure>
+                                <source srcset="../content/images/apartamentos/maceio.webp" type="image/webp">
+                                <source srcset="../content/images/apartamentos/maceio.jpg" type="image/jpg">
+                                <img src="../content/images/apartamentos/maceio.jpg" width="" height="" alt="Apartamento em Maceió" title="Apartamento em Maceió" />
+                            </figure>
+                            <section class="home-information">
+                                <h3>
+                                    <span data-room-name></span> <span data-room-number></span>
+                                </h3>
+                                <p>
+                                    Quarto <span data-room></span>
+                                </p>
+                                <div class="subway-information">
+                                    <div class="icon"><i class="icon-subway"></i></div>
+                                    <p data-subway-name></p>
+                                    <p>
+                                        <span data-subway-distance></span>
+                                    </p>
+                                </div>
+                                <h3>
+                                    <span data-room-price></span>
+                                </h3>
+                            </section>
+                    </div>
+                    <button id="new-service" class="button primary-button">CONTRATAR SERVIÇOS</button>
+                </section>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <address>Fale com a gente: <a href="mailto:contato@yuca.live">contato@yuca.live</a></address>
+    </footer>
+</body>
+</html>

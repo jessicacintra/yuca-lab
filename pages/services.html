@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuca Apartamentos e Coliving SP | Apartamentos individuais ou compartilhados</title>
+<link href="../content/css/styles.min.css" rel="stylesheet">
+<script src="../content/js/services.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container flex space-between header-height">
+            <figure>
+                <a href="home.html" class="active"><img src="../content/images/yuca.svg" width="40" height="40" alt="YUCA" title="YUCA" /></a>
+            </figure>
+            <section id="user-info">
+                <div id="short-name" data-short-name></div>
+                <div id="first-name" data-first-name></div>
+            </section>
+        </div>
+    </header>
+    <section id="content">
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">MEU YUCA</a></li>
+                <li><a href="#">MINHA CONTA</a></li>
+            </ul>
+        </nav>
+        <div id="content-container">
+            <section id="home">
+                <hr class="hr orange-line" />
+                <h1>
+                    Serviços Contratados
+                </h1>
+                <section id="current-services">
+                    <div class="box-services"></div>
+                    <div id="total-price">
+                        <p>
+                            Total Selecionado
+                            <span data-total-price></span>
+                        </p>
+                    </div>
+                    <button id="cancel-service" class="button primary-button">CANCELAR</button>
+                    <button id="save-service" class="button secondary-button" onclick="updateUserServices();">SALVAR</button>
+                </section>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <address>Fale com a gente: <a href="mailto:contato@yuca.live">contato@yuca.live</a></address>
+    </footer>
+</body>
+</html>
