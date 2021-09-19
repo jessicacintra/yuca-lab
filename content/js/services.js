@@ -137,3 +137,7 @@ function updateUserServices() {
         console.error('Erro para atualizar dados do usuário', err);
     });
 }
+
+function goToHome() {
+    window.location.href = "home.html";
+}
